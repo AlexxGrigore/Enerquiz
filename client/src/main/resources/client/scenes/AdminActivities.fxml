@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #232323;" stylesheets="@../stylesheets/admin_activity.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AdminActivitiesCtrl">
+   <children>
+      <Text fill="WHITE" layoutX="217.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activities Center" textAlignment="CENTER" wrappingWidth="1170.1187896728516" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Italic" size="120.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="-33.0" layoutY="-29.0" maxHeight="182.0" maxWidth="183.0" minHeight="36.0" minWidth="36.0" mnemonicParsing="false" onAction="#back" prefHeight="86.0" prefWidth="90.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" styleClass="backButton" text="&lt;" textFill="WHITE" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="41.0">
+         <font>
+            <Font name="System Bold" size="80.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="table" layoutX="95.0" layoutY="192.0" prefHeight="650.0" prefWidth="1170.0">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="79.0" resizable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold;" styleClass="colName" text="ID" />
+          <TableColumn fx:id="colActivityText" prefWidth="681.0" resizable="false" styleClass="colName" text="Activity_Text" />
+          <TableColumn fx:id="colAmountWh" prefWidth="229.0" resizable="false" style="-fx-alignment: CENTER;" styleClass="colName" text="Amount_Wh" />
+            <TableColumn fx:id="colImagePath" prefWidth="166.0" resizable="false" styleClass="colName" text="Image_Path" />
+        </columns>
+      </TableView>
+      <Button id="AdminActivityFunctionButton" fx:id="addButton" layoutX="1291.0" layoutY="322.0" mnemonicParsing="false" onAction="#addActivity" prefHeight="41.0" prefWidth="288.0" styleClass="small_button" text="Add Activity" AnchorPane.rightAnchor="21.0" />
+      <Button id="AdminActivityFunctionButton" fx:id="refreshButton" layoutX="1382.0" layoutY="675.0" mnemonicParsing="false" onAction="#refresh" prefHeight="41.0" prefWidth="106.0" styleClass="small_button" text="Refresh" />
+      <Button id="AdminActivityFunctionButton" fx:id="deleteByIdButton" layoutX="1291.0" layoutY="409.0" mnemonicParsing="false" onAction="#deleteActivity" prefHeight="41.0" prefWidth="288.0" styleClass="small_button" text="Delete Activity By ID" AnchorPane.rightAnchor="21.0" />
+      <Button id="AdminActivityFunctionButton" fx:id="defaultdatabaseButton" layoutX="1291.0" layoutY="584.0" mnemonicParsing="false" onAction="#loadDefaultDatabase" prefHeight="41.0" prefWidth="288.0" styleClass="small_button" text="Load Default Database" AnchorPane.rightAnchor="21.0" />
+      <Button id="AdminActivityFunctionButton" fx:id="deleteBySelectionButton" layoutX="1291.0" layoutY="497.0" mnemonicParsing="false" onAction="#deleteBySelection" prefHeight="41.0" prefWidth="288.0" styleClass="small_button" text="Delete Activity By Selection" AnchorPane.rightAnchor="21.0" />
+      <Text fx:id="successText" fill="#06ff06" layoutX="1291.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="successText" wrappingWidth="288.240234375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>

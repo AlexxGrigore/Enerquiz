@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="42.0" prefWidth="222.0" style="-fx-background-radius: 4;" styleClass="leaderboard-entry" stylesheets="@../stylesheets/leaderboard-entry.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controls.LeaderboardEntryCtrl">
+   <children>
+      <Label id="position" fx:id="position" layoutX="8.0" layoutY="4.0" styleClass="position" text="#1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label id="name" fx:id="name" layoutX="32.0" layoutY="6.0" prefHeight="18.0" prefWidth="196.0" styleClass="name" text="Name" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label id="points" fx:id="points" layoutX="32.0" layoutY="20.0" styleClass="points" text="0 points" textAlignment="CENTER" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="18.0" />
+   </children>
+</AnchorPane>

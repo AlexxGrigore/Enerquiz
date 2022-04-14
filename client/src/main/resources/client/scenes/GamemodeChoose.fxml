@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #232323;" stylesheets="@../stylesheets/theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.GamemodeChooseCtrl">
+   <children>
+      <Text fill="WHITE" layoutX="217.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gamemode" textAlignment="CENTER" wrappingWidth="1170.1187896728516" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Italic" size="120.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="mpImage" fitHeight="324.0" fitWidth="310.0" layoutX="325.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="322.0" AnchorPane.topAnchor="243.0">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="backButton" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="-33.0" layoutY="-29.0" maxHeight="182.0" maxWidth="183.0" minHeight="36.0" minWidth="36.0" mnemonicParsing="false" onAction="#back" prefHeight="85.0" prefWidth="90.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" styleClass="backButton" text="&lt;" textFill="WHITE" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="41.0">
+         <font>
+            <Font name="System Bold" size="80.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="spImage" fitHeight="310.0" fitWidth="310.0" layoutX="327.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="250.0">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="singleplayerButton" layoutX="340.0" layoutY="624.0" mnemonicParsing="false" onAction="#spChosen" prefHeight="75.0" prefWidth="310.0" style="-fx-background-color: #1464f6;" stylesheets="@../stylesheets/theme.css" text="Singleplayer" textFill="WHITE" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="320.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <styleClass>
+            <String fx:value="modeButton" />
+            <String fx:value="small_button" />
+         </styleClass>
+      </Button>
+      <Button fx:id="multiplayerButton" layoutX="978.0" layoutY="641.0" mnemonicParsing="false" onAction="#mpChosen" prefHeight="75.0" prefWidth="310.0" style="-fx-background-color: #1464f6;" stylesheets="@../stylesheets/theme.css" text="Multiplayer" textFill="WHITE" AnchorPane.bottomAnchor="181.05940888435407" AnchorPane.rightAnchor="321.6435757006816">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <styleClass>
+            <String fx:value="modeButton" />
+            <String fx:value="small_button" />
+         </styleClass>
+      </Button>
+      <Button fx:id="leaderboardButton" alignment="BOTTOM_CENTER" layoutX="682.0" layoutY="743.0" mnemonicParsing="false" onAction="#goToLeaderboard" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: #747474;" stylesheets="@../stylesheets/theme.css" text="Leaderboard" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="650.0" AnchorPane.rightAnchor="650.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <styleClass>
+            <String fx:value="leaderboardButton" />
+            <String fx:value="small_button" />
+         </styleClass>
+      </Button>
+      <Button fx:id="adminButton" layoutX="765.0" layoutY="605.0" mnemonicParsing="false" onAction="#goToAdminPanel" prefHeight="80.0" prefWidth="70.0" styleClass="background" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>

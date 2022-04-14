@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Check" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #232323;" stylesheets="@../stylesheets/admin_question_types.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.EditQuestionTypesCtrl">
+   <children>
+      <Text fill="WHITE" layoutX="217.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions Type" textAlignment="CENTER" wrappingWidth="1170.1187896728516" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Italic" size="120.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="-33.0" layoutY="-29.0" maxHeight="182.0" maxWidth="183.0" minHeight="36.0" minWidth="36.0" mnemonicParsing="false" onAction="#back" prefHeight="86.0" prefWidth="90.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" styleClass="backButton" textFill="WHITE" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="41.0">
+         <font>
+            <Font name="System Bold" size="80.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="estimationCheck" layoutX="228.0" layoutY="599.0" mnemonicParsing="false" onAction="#setImages" text="Estimation " AnchorPane.leftAnchor="228.0" />
+      <CheckBox fx:id="multipleChoiceCheck" layoutX="1240.0" layoutY="599.0" mnemonicParsing="false" onAction="#setImages" text="Multiple Choice" AnchorPane.rightAnchor="210.0" />
+      <CheckBox fx:id="multipleActivityCheck" layoutX="723.0" layoutY="599.0" mnemonicParsing="false" onAction="#setImages" text="Multiple Activity" AnchorPane.leftAnchor="723.0" AnchorPane.rightAnchor="723.0" />
+      <Button fx:id="applyButton" layoutX="725.0" layoutY="739.0" mnemonicParsing="false" onAction="#takeTypes" prefHeight="41.0" prefWidth="150.0" styleClass="small_button" text="Apply" AnchorPane.leftAnchor="725.0" AnchorPane.rightAnchor="725.0" />
+      <ImageView fx:id="esImageView" fitHeight="270.0" fitWidth="440.0" layoutX="71.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" styleClass="typeImages" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="1095.0" />
+      <ImageView fx:id="maImageView" fitHeight="270.0" fitWidth="440.0" layoutX="580.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" styleClass="typeImages" AnchorPane.leftAnchor="580.0" AnchorPane.rightAnchor="580.0" />
+      <ImageView fx:id="mcImageView" fitHeight="270.0" fitWidth="440.0" layoutX="1098.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" styleClass="typeImages" AnchorPane.leftAnchor="1095.0" AnchorPane.rightAnchor="65.0" />
+      <Label fx:id="messageText" layoutX="435.0" layoutY="672.0" prefHeight="34.0" prefWidth="700.0" styleClass="messageText" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0" />
+      <Separator layoutX="543.0" layoutY="284.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="1058.0" layoutY="284.0" orientation="VERTICAL" prefHeight="200.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+</AnchorPane>

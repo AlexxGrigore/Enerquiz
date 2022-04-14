@@ -1,0 +1,17 @@
+    • Backlog is good.
+        ◦ quite unclear naming for the issues
+        ◦ we should check if the final backlog is the same as the one we have on GitLab
+    • Design
+        ◦ we review the design of other people (Heuristic evaluation, HCI lectures)
+        ◦ make a design and let others evaluate it
+        ◦ make a mock-up for this Friday
+        ◦ we make a report about our design
+            ▪ contains their feedback
+    • We have to implement an API endpoint until the end of this week. It can be a very basic one
+    • When we resolve an issue, we make a few bullet points and check them 
+        ◦ we can add an estimate of how much it will take to solve an issue
+    • Create a merge request and mark it as draft (it automatically creates a branch and a merge request) and 
+    • split 3 by 3 → 3 for back end and 3 for front end and switch one by one
+
+    • a git commit every week.
+    • Merge requests should have comments

@@ -1,0 +1,8 @@
+@import url("theme.css");
+
+.emote-popover {
+    -fx-background-color: -color-pane-lighter;
+    -fx-shape: "m 30 0 l 60 0 q 10 0 10 10 l 0 0 l 0 22 q 0 10 -10 10 l -60 0 q -10 0 -10 -10 l -20 -11 l 20 -11 q 0 -10 10 -10 z";
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+}

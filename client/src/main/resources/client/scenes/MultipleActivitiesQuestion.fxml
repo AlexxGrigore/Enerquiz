@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1350.0" styleClass="background" stylesheets="@../stylesheets/multiple_activities_question.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.MultipleActivitiesQuestionCtrl">
+   <children>
+      <ImageView fx:id="questionImage" fitHeight="280.0" fitWidth="509.0" layoutX="413.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="progressBar" layoutX="392.0" layoutY="40.0" prefHeight="25.0" prefWidth="500.0" progress="1.0" />
+      <Button fx:id="answerA" layoutX="97.0" layoutY="588.0" mnemonicParsing="false" onAction="#submitAnswerActionA" prefHeight="262.0" prefWidth="334.0" style="-fx-wrap-text: true;">
+         <styleClass>
+            <String fx:value="roundedges" />
+            <String fx:value="button_answer" />
+         </styleClass>
+         <padding>
+            <Insets left="35.0" right="35.0" top="125.0" />
+         </padding>
+      </Button>
+      <Button fx:id="answerB" layoutX="475.0" layoutY="587.0" mnemonicParsing="false" onAction="#submitAnswerActionB" prefHeight="262.0" prefWidth="334.0" style="-fx-wrap-text: true;">
+         <styleClass>
+            <String fx:value="roundedges" />
+            <String fx:value="button_answer" />
+         </styleClass>
+         <padding>
+            <Insets left="35.0" right="35.0" top="125.0" />
+         </padding>
+      </Button>
+      <Button fx:id="answerC" layoutX="850.0" layoutY="587.0" mnemonicParsing="false" onAction="#submitAnswerActionC" prefHeight="262.0" prefWidth="334.0" style="-fx-wrap-text: true;">
+         <styleClass>
+            <String fx:value="roundedges" />
+            <String fx:value="button_answer" />
+         </styleClass>
+         <padding>
+            <Insets left="35.0" right="35.0" top="125.0" />
+         </padding>
+      </Button>
+      <Label fx:id="question" alignment="CENTER" layoutX="244.0" layoutY="392.0" prefHeight="117.0" prefWidth="847.0" style="-fx-wrap-text: true; -fx-background-radius: 30;" styleClass="label_question" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </Label>
+      <Button fx:id="exitButton" layoutX="1252.0" layoutY="40.0" mnemonicParsing="false" onAction="#exit" prefHeight="66.0" prefWidth="64.0" styleClass="exit" AnchorPane.rightAnchor="40.0" />
+      <Button fx:id="helpButton" layoutX="1156.0" layoutY="40.0" mnemonicParsing="false" onAction="#showHelp" prefHeight="66.0" prefWidth="64.0" styleClass="help" AnchorPane.rightAnchor="150.0" />
+      <ImageView fx:id="imageA" fitHeight="118.0" fitWidth="144.0" layoutX="192.0" layoutY="600.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="image_answer" />
+      <ImageView fx:id="imageB" fitHeight="118.0" fitWidth="144.0" layoutX="570.0" layoutY="600.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="image_answer" />
+      <ImageView fx:id="imageC" fitHeight="118.0" fitWidth="144.0" layoutX="945.0" layoutY="600.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" styleClass="image_answer" />
+      <Pane fx:id="helpPane" layoutX="604.0" layoutY="135.0" prefHeight="355.0" prefWidth="520.0" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="125.0" />
+      <Label fx:id="questionIndexLabel" layoutX="922.0" layoutY="32.0" prefHeight="32.0" prefWidth="115.0" style="-fx-alignment: CENTER; -fx-text-fill: WHITE;" text="1 / 20" textFill="WHITE" AnchorPane.bottomAnchor="826.0" AnchorPane.rightAnchor="313.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="1069.0" layoutY="399.0" prefHeight="102.0" prefWidth="366.0" rotate="90.0" style="-fx-background-radius: 30;" styleClass="grey-elemtnt" AnchorPane.rightAnchor="-85.39999999999998">
+         <buttons>
+            <Button fx:id="reduceTimeJokerButton" minHeight="59.0" minWidth="62.0" mnemonicParsing="false" onAction="#playReduceTimeJoker" prefHeight="75.0" rotate="-90.0" translateX="-100.0">
+               <styleClass>
+                  <String fx:value="joker_time" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Button>
+            <Button fx:id="doublePointsJokerButton" graphicTextGap="0.0" layoutX="144.0" layoutY="47.0" minWidth="35.0" mnemonicParsing="false" onAction="#playDoublePointsJoker" prefHeight="63.0" prefWidth="60.0" rotate="-90.0" style="-fx-wrap-text: true;" styleClass="grey-elemtnt" textAlignment="CENTER" textFill="WHITE" translateX="-57.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="52.0" prefWidth="62.0" style="-fx-wrap-text: true;" styleClass="shadow" text="   2x points" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="removeIncorrectAnswerJokerButton" layoutX="229.0" layoutY="47.0" mnemonicParsing="false" onAction="#removeIncorrectAnswer" prefHeight="0.0" prefWidth="30.0" rotate="90.0" translateX="-20.0">
+               <styleClass>
+                  <String fx:value="joker_question" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Button>
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

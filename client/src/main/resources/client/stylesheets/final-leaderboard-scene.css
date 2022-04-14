@@ -1,0 +1,118 @@
+@import url("theme.css");
+
+
+.roundedges_medium{
+	-fx-shape: "M 100 500 Q 100 500 100 300 Q 100 250 150 250 Q 350 250 500 250 Q 550 250 550 300 L 550 500 Q 550 550 500 550 L 150 550 Q 100 550 100 500 "
+}
+.roundedges_tall{
+	-fx-shape: "M 100 500 Q 100 500 100 300 Q 100 250 150 250 Q 350 250 600 250 Q 650 250 650 300 L 650 500 Q 650 550 600 550 L 150 550 Q 100 550 100 500 "
+}
+.roundedges_small{
+	-fx-shape: "M 100 500 Q 100 500 100 300 Q 100 250 150 250 Q 350 250 400 250 Q 450 250 450 300 L 450 500 Q 450 550 400 550 L 150 550 Q 100 550 100 500 "
+}
+.circle{
+	-fx-shape: "M 200 500 Q 100 500 100 400 Q 100 300 200 300 Q 300 300 300 400 Q 300 500 200 500"
+}
+
+.exit{
+	-fx-background-color:-color-background;
+	-fx-border-color: white;
+	-fx-border-width: 20;
+	-fx-shape: "M10.79 16.29c.39.39 1.02.39
+	1.41 0l3.59-3.59c.39-.39.39-1.02 0-1.41L12.2 7.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02
+	0 1.41L12.67 11H4c-.55 0-1 .45-1 1s.45 1 1 1h8.67l-1.88 1.88c-.39.39-.38 1.03 0 1.41zM19
+	3H5c-1.11 0-2 .9-2 2v3c0 .55.45 1 1 1s1-.45 1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0
+	.55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v3c0 1.1.9 2 2 2h14c1.1 0
+	2-.9 2-2V5c0-1.1-.9-2-2-2z"
+}
+
+
+.root {
+	-color-background: #232323;
+	-color-pane: #444444;
+}
+
+.background {
+	-fx-background-color: -color-background;
+}
+.grey-elemtnt{
+	-fx-background-color: #454545;
+}
+.header_label {
+	-fx-text-fill: white;
+	-fx-font-size: 90;
+	-fx-font-style: italic;
+}
+.winner_label1 {
+	-fx-text-fill: white;
+	-fx-font-size:35;
+
+}
+.winner_label2 {
+	-fx-text-fill: white;
+	-fx-font-size: 30;
+
+}
+
+.play_again_button {
+	-fx-text-fill: white;
+	-fx-font-size: 20;
+	-fx-background-color: #0C58CE;
+}
+.leaderboard_button {
+	-fx-text-fill: white;
+	-fx-font-size: 20;
+	-fx-background-color: #454545;
+}
+.label_points {
+	-fx-text-fill: white;
+	-fx-font-size:20;
+	-fx-alignment: center;
+
+}
+
+.scroll-pane > .viewport {
+	-fx-background-color: -color-background;
+}
+
+.header_label {
+	-fx-text-fill: white;
+	-fx-font-size: 90;
+	-fx-font-style:italic;
+}
+.winner_label1 {
+	-fx-text-fill: white;
+	-fx-font-size:35;
+
+}
+.winner_label2 {
+	-fx-text-fill: white;
+	-fx-font-size:30;
+
+}
+
+.continue_button {
+	-fx-text-fill: white;
+	-fx-font-size: 20;
+	-fx-background-color:#0C58CE;
+}
+
+.button{
+-fx-focus-color: transparent;
+}
+.button:hover {
+    
+    -fx-scale-y: 1.03;
+}
+
+.button:pressed {
+    -fx-scale-y: 0.97;
+    -fx-scale-x: 0.97;
+}
+
+/*.gold_medal {*/
+/*	-fx-background-image: url("/client/images/gold medal.png");*/
+/*	-fx-background-repeat: no-repeat;*/
+/*	-fx-background-size: 500 500;*/
+/*	-fx-background-position: center center;*/
+/*}*/

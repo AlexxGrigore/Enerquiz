@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" styleClass="background" stylesheets="@../stylesheets/final-leaderboard-scene.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.GameLeaderboardCtrl">
+   <children>
+      <Button fx:id="exitButton" layoutX="1309.0" layoutY="40.0" mnemonicParsing="false" onAction="#exit" prefHeight="66.0" prefWidth="64.0" styleClass="exit" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0" />
+      <Label alignment="CENTER" layoutX="368.0" layoutY="106.0" prefHeight="131.0" prefWidth="866.0" styleClass="header_label" text="Podium" />
+      <Label layoutX="650.0" layoutY="516.0" prefHeight="170.0" prefWidth="300.0" rotate="90.0" AnchorPane.bottomAnchor="214.0">
+         <styleClass>
+            <String fx:value="grey-elemtnt" />
+            <String fx:value="roundedges_tall" />
+         </styleClass>
+      </Label>
+      <Label layoutX="930.0" layoutY="585.0" prefHeight="170.0" prefWidth="170.0" AnchorPane.bottomAnchor="145.0" AnchorPane.rightAnchor="502.0">
+         <styleClass>
+            <String fx:value="grey-elemtnt" />
+            <String fx:value="roundedges_small" />
+         </styleClass>
+      </Label>
+      <Label layoutX="472.0" layoutY="555.0" prefHeight="167.0" prefWidth="226.0" rotate="90.0" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="472.0">
+         <styleClass>
+            <String fx:value="grey-elemtnt" />
+            <String fx:value="roundedges_medium" />
+         </styleClass>
+      </Label>
+      <Button fx:id="playAgainButton" layoutX="821.0" layoutY="804.0" mnemonicParsing="false" onAction="#playAgain" prefHeight="43.0" prefWidth="230.0" style="-fx-background-radius: 5;" styleClass="play_again_button" text="Play again" />
+      <Label fx:id="firstPlayerName" alignment="CENTER" contentDisplay="CENTER" layoutX="718.0" layoutY="322.0" prefHeight="86.0" prefWidth="167.0" styleClass="winner_label1" text="Player1" />
+      <Label fx:id="secondPlayerName" alignment="CENTER" contentDisplay="CENTER" layoutX="501.0" layoutY="408.0" prefHeight="86.0" prefWidth="167.0" styleClass="winner_label2" text="Player2" />
+      <Label fx:id="thirdPlayerName" alignment="CENTER" contentDisplay="CENTER" layoutX="931.0" layoutY="467.0" prefHeight="86.0" prefWidth="167.0" styleClass="winner_label2" text="Player3" />
+      <ImageView fx:id="goldImageView" fitHeight="86.0" fitWidth="80.0" layoutX="760.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gold%20medal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="silverImageView" fitHeight="80.0" fitWidth="80.0" layoutX="545.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/silver%20medal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bronzeImageView" fitHeight="80.0" fitWidth="73.0" layoutX="978.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bronze.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="secondPlayerPoints" alignment="CENTER" layoutX="501.0" layoutY="651.0" prefHeight="38.0" prefWidth="167.0" styleClass="label_points" />
+      <Label fx:id="firstPlayerPoints" alignment="CENTER" layoutX="716.0" layoutY="583.0" prefHeight="38.0" prefWidth="167.0" styleClass="label_points" />
+      <Label fx:id="thirdPlayerPoints" alignment="CENTER" layoutX="931.0" layoutY="689.0" prefHeight="38.0" prefWidth="167.0" styleClass="label_points" />
+      <Button fx:id="backToLeaderboardButton" layoutX="545.0" layoutY="805.0" mnemonicParsing="false" onAction="#backToLeaderboard" prefHeight="38.0" prefWidth="230.0" style="-fx-background-radius: 5;" styleClass="leaderboard_button" text="Back to leaderboard" />
+   </children>
+</AnchorPane>

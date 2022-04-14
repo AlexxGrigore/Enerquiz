@@ -1,0 +1,16 @@
+@import url("theme.css");
+
+.leaderboard-entry {
+    -fx-background-color: -color-pane;
+}
+
+.leaderboard-entry .position,
+.leaderboard-entry .name,
+.leaderboard-entry .points {
+    -fx-text-fill: -color-foreground;
+}
+
+.leaderboard-entry .name,
+.leaderboard-entry .points {
+    -fx-text-alignment: center;
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" styleClass="background" stylesheets="@../stylesheets/global-leaderboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.GlobalLeaderBoardCtrl">
+   <children>
+      <Label alignment="CENTER" layoutX="481.0" layoutY="66.0" prefHeight="94.0" prefWidth="638.0" styleClass="header_label" text="Leaderboard" />
+      <GridPane fx:id="singlePlayerBoard" layoutX="147.0" layoutY="362.0" prefHeight="359.0" prefWidth="446.0" translateX="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.60003662109375" minWidth="10.0" prefWidth="59.999972534179676" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.4" minWidth="10.0" prefWidth="270.4" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.20001220703125" minWidth="10.0" prefWidth="104.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label layoutX="83.0" layoutY="164.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label layoutX="83.0" layoutY="164.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="83.0" layoutY="20.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="83.0" layoutY="20.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" />
+            <Label prefHeight="55.0" prefWidth="274.0" styleClass="label_player_names" text="  " GridPane.columnIndex="1" />
+            <Label layoutX="105.0" layoutY="18.0" prefHeight="55.0" prefWidth="270.0" styleClass="label_player_names" text="  " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label layoutX="105.0" layoutY="89.0" prefHeight="55.0" prefWidth="282.0" styleClass="label_player_names" text="  " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="105.0" layoutY="161.0" prefHeight="55.0" prefWidth="285.0" styleClass="label_player_names" text="  " GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="105.0" layoutY="232.0" prefHeight="55.0" prefWidth="307.0" styleClass="label_player_names" text="  " GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="55.0" prefWidth="120.0" styleClass="label_player_points" GridPane.columnIndex="2" />
+            <Label layoutX="329.0" layoutY="19.0" prefHeight="55.0" prefWidth="117.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label layoutX="329.0" layoutY="91.0" prefHeight="55.0" prefWidth="124.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label layoutX="329.0" layoutY="164.0" prefHeight="55.0" prefWidth="116.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label layoutX="329.0" layoutY="236.0" prefHeight="55.0" prefWidth="119.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ImageView fx:id="singleFirstMedal" fitHeight="47.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../images/gold%20medal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="multiSecondMedal" fitHeight="47.0" fitWidth="48.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/silver%20medal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="multiThirdMedal" fitHeight="37.0" fitWidth="39.0" layoutX="23.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/bronze.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="49.0" prefWidth="63.0" styleClass="placement_label" text="#4" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="239.0" prefHeight="49.0" prefWidth="63.0" styleClass="placement_label" text="#5" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="147.0" layoutY="257.0" prefHeight="70.0" prefWidth="446.0" styleClass="sub_header_label" text="SINGLEPLAYER" translateX="10.0" />
+      <Label layoutX="930.0" layoutY="233.0" prefHeight="514.0" prefWidth="575.0" styleClass="white_border" />
+      <GridPane fx:id="multiPlayerBoard" layoutX="994.0" layoutY="362.0" prefHeight="359.0" prefWidth="446.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.60003662109375" minWidth="10.0" prefWidth="59.999972534179676" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.4" minWidth="10.0" prefWidth="270.4" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.20001220703125" minWidth="10.0" prefWidth="104.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label layoutX="83.0" layoutY="164.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label layoutX="83.0" layoutY="164.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="83.0" layoutY="20.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="83.0" layoutY="20.0" prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="53.0" prefWidth="47.0" styleClass="label_triangle" translateX="230.0" GridPane.columnIndex="1" />
+            <Label prefHeight="55.0" prefWidth="274.0" styleClass="label_player_names" GridPane.columnIndex="1" />
+            <Label layoutX="105.0" layoutY="18.0" prefHeight="55.0" prefWidth="270.0" styleClass="label_player_names" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label layoutX="105.0" layoutY="89.0" prefHeight="55.0" prefWidth="282.0" styleClass="label_player_names" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="105.0" layoutY="161.0" prefHeight="55.0" prefWidth="285.0" styleClass="label_player_names" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label layoutX="105.0" layoutY="232.0" prefHeight="55.0" prefWidth="307.0" styleClass="label_player_names" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="55.0" prefWidth="120.0" styleClass="label_player_points" GridPane.columnIndex="2" />
+            <Label layoutX="329.0" layoutY="19.0" prefHeight="55.0" prefWidth="117.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label layoutX="329.0" layoutY="91.0" prefHeight="55.0" prefWidth="124.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label layoutX="329.0" layoutY="164.0" prefHeight="55.0" prefWidth="116.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label layoutX="329.0" layoutY="236.0" prefHeight="55.0" prefWidth="119.0" styleClass="label_player_points" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ImageView fx:id="multiFirstMedal" fitHeight="47.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../images/gold%20medal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="singleSecondMedal" fitHeight="47.0" fitWidth="48.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/silver%20medal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="singleThirdMedal" fitHeight="37.0" fitWidth="39.0" layoutX="23.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/bronze.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="49.0" prefWidth="63.0" styleClass="placement_label" text="#4" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="239.0" prefHeight="49.0" prefWidth="63.0" styleClass="placement_label" text="#5" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label layoutX="82.0" layoutY="233.0" prefHeight="514.0" prefWidth="575.0" styleClass="white_border" translateX="10.0" />
+      <Label alignment="CENTER" layoutX="994.0" layoutY="257.0" prefHeight="70.0" prefWidth="446.0" styleClass="sub_header_label" text="MULTIPLAYER" />
+      <Button fx:id="backButton" layoutX="53.0" layoutY="41.0" mnemonicParsing="false" onAction="#back" prefHeight="85.0" prefWidth="90.0" styleClass="background" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="41.0" />
+   </children>
+</AnchorPane>

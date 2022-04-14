@@ -1,0 +1,87 @@
+@import url("theme.css");
+
+
+
+.root {
+    -color-background: #232323;
+    -color-pane: #444444;
+}
+
+.background {
+    -fx-background-color: -color-background;
+}
+.grey-elemtnt{
+	-fx-background-color: #454545;
+}
+.header_label {
+    -fx-text-fill: white;
+	-fx-font-size: 90;
+	-fx-font-style:italic;
+}
+.label_player_names {
+	-fx-background-color: #454545;
+    -fx-text-fill: white;
+	-fx-font-size:25;
+	-fx-shape:"M 600 450 L 150 450 A 50 50 0 1 1 150 350 L 600 350 L 600 350 L 550 400 L 600 450 "
+	
+	
+}
+.label_player_points {
+	-fx-background-color: #7A7A7A;
+    -fx-text-fill: white;
+	-fx-font-size:25;
+	-fx-shape:"M 600 350 A 50 50 0 1 1 600 450 L 400 450 L 400 350 L 600 350 "
+	
+	
+	
+}
+.label_triangle {
+	-fx-background-color: #7A7A7A;
+    
+	
+	
+	
+}
+
+
+
+
+
+.header_label {
+    -fx-text-fill: white;
+	-fx-font-size: 90;
+	-fx-font-style:italic;
+}
+.sub_header_label {
+    -fx-text-fill: white;
+	-fx-background-color: #7A7A7A;
+	-fx-font-size: 35;
+	-fx-shape:"M 700 350 A 50 50 0 1 1 700 450 L 50 450 A 50 50 0 1 1 50 350 L 700 350   "
+	
+}
+
+.placement_label {
+    -fx-text-fill: white;
+	-fx-font-size: 25;
+	-fx-font-style:italic;
+}
+.white_border {
+   
+	-fx-border-radius: 30;
+
+-fx-border-color: white;
+-fx-border-width: 3;
+}
+
+.button{
+-fx-focus-color: transparent;
+}
+.button:hover {
+    
+    -fx-scale-y: 1.03;
+}
+
+.button:pressed {
+    -fx-scale-y: 0.97;
+    -fx-scale-x: 0.97;
+}

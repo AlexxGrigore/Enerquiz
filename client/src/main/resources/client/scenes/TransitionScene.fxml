@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1350.0" style="-fx-background-color: #232323;" stylesheets="@../stylesheets/ingame.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.TransitionSceneCtrl">
+    <cursor>
+        <Cursor fx:constant="OPEN_HAND" />
+    </cursor>
+   <children>
+      <ImageView fx:id="gifImageView" fitHeight="506.0" fitWidth="530.0" layoutX="430.0" layoutY="227.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/earthBurns.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

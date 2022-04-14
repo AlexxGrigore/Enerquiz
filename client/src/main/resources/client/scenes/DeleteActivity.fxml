@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="1125.0" styleClass="background" stylesheets="@../stylesheets/admin_activity.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.DeleteActivityCtrl">
+   <children>
+      <Label fx:id="activityID" layoutX="403.0" layoutY="51.0" styleClass="notColLabels" text="Activity ID" />
+      <TextField fx:id="idInput" layoutX="498.0" layoutY="51.0" prefWidth="162.0" />
+      <TableView fx:id="table" layoutX="36.0" layoutY="127.0" prefHeight="81.0" prefWidth="1043.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="45.0" style="-fx-alignment: CENTER; -fx-font-weight: bold;" styleClass="colName" text="ID" />
+            <TableColumn fx:id="colActivityText" prefWidth="674.0" styleClass="colName" text="Activity_Text" />
+            <TableColumn fx:id="colAmountWh" prefWidth="175.0" style="-fx-alignment: CENTER;" styleClass="colName" text="Amount_Wh" />
+            <TableColumn fx:id="colImagePath" prefWidth="143.0" styleClass="colName" text="Image_Path" />
+         </columns>
+      </TableView>
+      <Button id="AdminActivityFunctionButton" fx:id="deleteButton" layoutX="398.0" layoutY="244.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button id="AdminActivityFunctionButton" fx:id="cancelButton" layoutX="679.0" layoutY="244.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button id="AdminActivityFunctionButtonSmall" fx:id="searchButton" layoutX="679.0" layoutY="51.0" mnemonicParsing="false" onAction="#showActivity" prefHeight="16.0" prefWidth="90.0" text="Search" />
+      <Label fx:id="errorText" layoutX="321.0" layoutY="94.0" prefHeight="22.0" prefWidth="515.0" style="-fx-alignment: CENTER;" styleClass="errorText" text="errorText" />
+      <Label fx:id="successText" layoutX="414.0" layoutY="94.0" prefHeight="22.0" prefWidth="329.0" style="-fx-alignment: Center;" styleClass="successText" text="Activity deleted successfully " />
+   </children>
+</AnchorPane>
